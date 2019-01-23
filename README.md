@@ -42,6 +42,10 @@ We need to design a **reporting** and **dashboard** solution, addressing busines
 1. Easy to use reporting platform.
 1. Collaboration among business users.
 
+## 3. Add Customers and Date Dimensions
+
+![sales by order date](images/erd_after.png)
+
 ## 4. Simulate ETL
 
 > IT department has implemented an ETL solution for loading data into the data warehouse. ETL solution is scheduled to execute every day during off-peak hours.
