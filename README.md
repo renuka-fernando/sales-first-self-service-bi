@@ -2,6 +2,13 @@
 
 Step by step Self-Service BI implementation using Microsoft Power BI
 
+## 1. Initial State
+
+1. Data Warehouse ([backup_file](resource-files/SalesFirst.bak))
+2. Customer Dimension in a Flat CSV file ([csv_vile](resource-files/Customers.csv)))
+
+![sales by order date](images/erd_before.png)
+
 ## 4. Simulate ETL
 
 > IT department has implemented an ETL solution for loading data into the data warehouse. ETL solution is scheduled to execute every day during off-peak hours.
@@ -44,4 +51,6 @@ You can reset this with executing following SQL script and refresh from Power BI
 DELETE
 FROM dbo.FactInternetSales
 WHERE YEAR(OrderDate) = 2018 and MONTH(OrderDate) = 12
+
+DROP TABLE dbo.sales_temp
 ```
