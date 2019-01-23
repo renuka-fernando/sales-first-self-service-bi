@@ -2,7 +2,7 @@
 
 Step by step Self-Service BI implementation using Microsoft Power BI
 
-## Simulate ETL
+## 4. Simulate ETL
 
 > IT department has implemented an ETL solution for loading data into the data warehouse. ETL solution is scheduled to execute every day during off-peak hours.
 
@@ -32,5 +32,16 @@ FROM [SalesFirstDW].[dbo].[FactInternetSales]
 ORDER BY OrderDate DESC
 ```
 
-Results
+Results.
 ![sales by order date](images/check_insertion.png)
+
+The model can be refreshed easily with a single click and continue getting business insight.
+![sales by order date](images/updated_table.png)
+
+You can reset this with executing following SQL script and refresh from Power BI again.
+
+```sql
+DELETE
+FROM dbo.FactInternetSales
+WHERE YEAR(OrderDate) = 2018 and MONTH(OrderDate) = 12
+```
