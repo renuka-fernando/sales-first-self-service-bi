@@ -1,6 +1,9 @@
 # Sales First - Self-Service Business Intelligence
 
-Step by step Self-Service BI implementation using Microsoft Power BI
+Step by step Self-Service BI implementation using Microsoft Power BI.
+
+This work is done as an assignment under the course **Business Intelligence and Decision Support Systems - SENG 42673** of **BSc in Software Engineering, University of Kelaniya**.
+Facilitator: [Mr. Dinesh Priyankara](https://lk.linkedin.com/in/dineshpriyankara).
 
 ## 1. Introduction
 
@@ -11,8 +14,8 @@ diagram related to the data warehouse designed is shown below
 
 IT department has implemented an ETL solution for loading data into the data warehouse. **ETL solution is scheduled to execute every day** during off-peak hours. Customer information is NOT maintained in the data warehouse. However, it is available as a text file.
 
-1. Data Warehouse ([backup_file](resource-files/SalesFirst.bak))
-2. Customer Dimension in a Flat CSV file ([csv_vile](resource-files/Customers.csv))) - For demonstrating inclution of external resources.
+1. Data Warehouse - SQL Server ([backup_file](resource-files/SalesFirst.bak))
+2. Customer Dimension in a Flat CSV file ([csv_vile](resource-files/Customers.csv)) - For demonstrating inclusion of external resources.
 
 ## 2. Requirement
 
@@ -42,18 +45,52 @@ We need to design a **reporting** and **dashboard** solution, addressing busines
 1. Easy to use reporting platform.
 1. Collaboration among business users.
 
-## 3. Add Customers and Date Dimensions
+## 3. Load Data
+
+Restore the Data Warehouse ([backup_file](resource-files/SalesFirst.bak)) to SQL Server and load it in Power BI Desktop and load Customer CSV file ([csv_vile](resource-files/Customers.csv)).
+![load sql server data warehouse and customer flat file](images/load_resources.png)
+
+## 4. Add Date Dimension
+
+Create new table called ***Date***.
+
+```dax
+Date = CALENDAR(DATE(2011, 1,1), DATE(2022, 12, 31))
+```
+
+![date table](images/date_table.png)
+
+![date type](images/date_type.png)
+
+Following are the DAX expressions to create other fields.
+```dax
+Year = FORMAT('Date'[Date], "yyyy")
+MonthNumber = FORMAT('Date'[Date], "m")
+MonthName = FORMAT('Date'[Date], "mmmm")
+Day = FORMAT('Date'[Date], "d")
+DateKey = FORMAT('Date'[Date], "yyyymmdd")
+DayOfWeekNumber = WEEKDAY('Date'[Date], 2)
+DayOfWeek = FORMAT('Date'[Date],"dddd")
+```
+
+![date other fields](images/date_other_fields.png)
+
+## 5. Add Customers and Date Dimensions
 
 ![sales by order date](images/erd_after.png)
 
-## 4. Simulate ETL
+## 6. Proposed Reports
+
+## 7. Implement Reports
+
+## 8. Simulate ETL
 
 > IT department has implemented an ETL solution for loading data into the data warehouse. ETL solution is scheduled to execute every day during off-peak hours.
 
-For the demonstration lets add some sales valuesf for ***December 2018***.
+For the demonstration lets add some sales values of for ***December 2018***.
 ![sales by order date](images/sales_order_date.png)
 
-Lets add same sales values from ***December 2016*** to ***December 2018***. Execute the following.
+Let's add same sales values from ***December 2016*** to ***December 2018***. Execute the following.
 
 ```sql
 SELECT *
