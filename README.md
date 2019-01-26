@@ -5,6 +5,8 @@ Step by step Self-Service BI implementation using Microsoft Power BI.
 This work is done as an assignment under the course **Business Intelligence and Decision Support Systems - SENG 42673** of **BSc in Software Engineering, University of Kelaniya**.
 Facilitator: [Mr. Dinesh Priyankara](https://lk.linkedin.com/in/dineshpriyankara).
 
+Presentation : [Click here](https://www.slideshare.net/JayathmaChathurangan/sales-first-bi-solution1).
+
 ## 1. Introduction
 
 We work for a company named **SalesFirst (Pvt)** Ltd. The IT department has developed a relational data warehouse addressing business intelligence requirement related to the company. The logical ER
