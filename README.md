@@ -83,6 +83,16 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 
 ## 6. Proposed Reports
 
+### Dashboard
+
+![Dashboard](images/Sketch_Dahsboard.jpg)
+
+Visual types used and the reason
+Cards with KPI        	- YTD sales for the current year (since it is the Key for strategic level decisions)
+Clustured Column Chart 	- Sales amount along with last year sales amount by month (categorical and comparison make easier)
+Basic Map               - Sales amount by country (quantitative and spatial location)
+
+
 ## 7. Implement Reports
 
 ## 8. Simulate ETL
