@@ -95,6 +95,12 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 
 ## 7. Implementation
 
+### Reports
+
+1. Anual Sales ![Anula Sales](images/anual_sales.png)
+
+1. Monthly Sales ![Monthly Sales](images/monthly_sales.png)
+
 ### Dashboard
 
 ![Dashboard Implemented](images/dashboard.png)
