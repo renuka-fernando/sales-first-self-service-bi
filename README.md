@@ -82,18 +82,18 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 
 ![sales by order date](images/erd_after.png)
 
-## 6. Proposed Reports
+## 6. Proposed Designs for the Reports
 
 ### Dashboard
 
 ![Dashboard](images/Sketch_Dahsboard.jpg)
 
 **Visual types used and the reason**.
-- ***Cards with KPI***      	- YTD sales for the current year (Since it is the Key for strategic level decisions)
+- ***Cards with KPI***      	- YTD sales for the current year, month and day (Since it is the Key for strategic level decisions)
 - ***Clustured Column Chart*** 	- Sales amount along with last year sales amount by month (Categorical data and comparison make easier)
 - ***Basic Map***               - Sales amount by country (Quantitative nature and spatial location)
 
-## 7. Implement Reports
+## 7. Implementation
 
 ### Dashboard
 
