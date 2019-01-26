@@ -97,7 +97,7 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 
 ### Dashboard
 
-![Dashboard Implemented](images/dahsboard.png)
+![Dashboard Implemented](images/dashboard.png)
 
 ## 8. Simulate ETL
 
