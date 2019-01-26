@@ -3,7 +3,10 @@
 Step by step Self-Service BI implementation using Microsoft Power BI.
 
 This work is done as an assignment under the course **Business Intelligence and Decision Support Systems - SENG 42673** of **BSc in Software Engineering, University of Kelaniya**.
+
 Facilitator: [Mr. Dinesh Priyankara](https://lk.linkedin.com/in/dineshpriyankara).
+
+Presentation : [Click here](https://www.slideshare.net/JayathmaChathurangan/sales-first-bi-solution1).
 
 ## 1. Introduction
 
@@ -79,9 +82,22 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 
 ![sales by order date](images/erd_after.png)
 
-## 6. Proposed Reports
+## 6. Proposed Designs for the Reports
 
-## 7. Implement Reports
+### Dashboard
+
+![Dashboard](images/Sketch_Dahsboard.jpg)
+
+**Visual types used and the reason**.
+- ***Cards with KPI***      	- YTD sales for the current year, month and day (Since it is the Key for strategic level decisions)
+- ***Clustured Column Chart*** 	- Sales amount along with last year sales amount by month (Categorical data and comparison make easier)
+- ***Basic Map***               - Sales amount by country (Quantitative nature and spatial location)
+
+## 7. Implementation
+
+### Dashboard
+
+![Dashboard Implemented](images/dashboard.png)
 
 ## 8. Simulate ETL
 
