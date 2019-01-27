@@ -93,6 +93,19 @@ DayOfWeek = FORMAT('Date'[Date],"dddd")
 - ***Clustured Column Chart*** 	- Sales amount along with last year sales amount by month (Categorical data and comparison make easier)
 - ***Basic Map***               - Sales amount by country (Quantitative nature and spatial location)
 
+### Reports
+
+![Annual Report](images/sketch_anual_report.jpg)
+
+![Monthly Report](images/sketch_monthly_report.jpg)
+
+**Visual types used and the reason**.
+- ***Cards with KPI***      	- YTD sales for the current year, month and day (Since it is the Key for strategic level decisions)
+- ***Donut Chart***      		- Sales amount by product category (Categorical data and comparison make easier)
+- ***Clustured Column Chart*** 	- Sales amount along with last year sales amount by month (Categorical data and comparison make easier)
+- ***Basic Map***               - Sales amount by country (Quantitative nature and spatial location)
+- ***Stacked Column Chart***    - Sales, total product cost and tax amount by currency, & Sales, total product cost and tax amount by day(Categorical data and comparison make easier with break down and compare parts of a whole)
+
 ## 7. Implementation
 
 ### Reports
